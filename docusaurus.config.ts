@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -7,13 +9,16 @@ import type * as Preset from '@docusaurus/preset-classic';
 const siteUrl = 'https://ue-docs-korea.github.io';
 const siteBaseUrl = '/UE-handbook/';
 const logoImagePath = 'img/logo.png';
-const faviconImagePath = 'img/favicon.png';
+const faviconImagePath = 'favicon.png';
+const faviconFilePath = path.join(process.cwd(), 'static', 'favicon.png');
+const faviconAssetVersion = fs.statSync(faviconFilePath).mtimeMs.toFixed(0);
+const faviconAssetPath = `${faviconImagePath}?v=${faviconAssetVersion}`;
 const logoImageUrl = `${siteUrl}${siteBaseUrl}img/logo.png`;
 
 const config: Config = {
   title: 'UE5 C++ 핸드북',
   tagline: '한국어로 읽는 Unreal Engine 5 C++ 학습서',
-  favicon: faviconImagePath,
+  favicon: faviconAssetPath,
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -66,7 +71,14 @@ const config: Config = {
       tagName: 'link',
       attributes: {
         rel: 'apple-touch-icon',
-        href: `${siteBaseUrl}${faviconImagePath}`,
+        href: `${siteBaseUrl}${faviconAssetPath}`,
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'shortcut icon',
+        href: `${siteBaseUrl}${faviconAssetPath}`,
       },
     },
   ],
@@ -100,7 +112,7 @@ const config: Config = {
       title: 'UE5 C++ 핸드북',
       logo: {
         alt: 'UE5 C++ Handbook Logo',
-        src: faviconImagePath,
+        src: faviconAssetPath,
       },
       items: [
         {
