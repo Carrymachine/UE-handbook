@@ -66,7 +66,7 @@ const config: Config = {
       tagName: 'link',
       attributes: {
         rel: 'apple-touch-icon',
-        href: `${siteBaseUrl}img/logo.png`,
+        href: `${siteBaseUrl}${faviconImagePath}`,
       },
     },
   ],
@@ -100,7 +100,7 @@ const config: Config = {
       title: 'UE5 C++ 핸드북',
       logo: {
         alt: 'UE5 C++ Handbook Logo',
-        src: 'img/logo.svg',
+        src: faviconImagePath,
       },
       items: [
         {
