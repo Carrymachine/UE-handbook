@@ -19,6 +19,20 @@
 * 한국어 설명과 영어 API 이름을 분리해서 유지한다.
 * 구조 개편이 생기면 이 페이지에 먼저 기록한다.
 
+## 자동 변경 이력
+
+이 섹션은 GitHub Actions가 `main` 브랜치 변경을 감지해 자동으로 갱신한다.
+
+버전 규칙:
+
+* 기본 증가는 `patch`다.
+* 커밋 메시지에 `[minor]`가 포함되면 `minor`를 올린다.
+* 커밋 메시지에 `[major]`가 포함되면 `major`를 올린다.
+
+{/* AUTO-ANNOUNCEMENTS:START */}
+_자동 기록이 아직 없습니다._
+{/* AUTO-ANNOUNCEMENTS:END */}
+
 ## Related Topics
 
 * [Contributor List](/contributors)

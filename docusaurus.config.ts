@@ -4,10 +4,16 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const siteUrl = 'https://ue-docs-korea.github.io';
+const siteBaseUrl = '/UE-handbook/';
+const logoImagePath = 'img/logo.png';
+const faviconImagePath = 'img/favicon.png';
+const logoImageUrl = `${siteUrl}${siteBaseUrl}img/logo.png`;
+
 const config: Config = {
   title: 'UE5 C++ 핸드북',
   tagline: '한국어로 읽는 Unreal Engine 5 C++ 학습서',
-  favicon: 'img/favicon.ico',
+  favicon: faviconImagePath,
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,10 +21,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://ue-docs-korea.github.io',
+  url: siteUrl,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/UE-handbook/',
+  baseUrl: siteBaseUrl,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -34,6 +40,36 @@ const config: Config = {
     defaultLocale: 'ko',
     locales: ['ko'],
   },
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'theme-color',
+        content: '#121419',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:image',
+        content: logoImageUrl,
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:image',
+        content: logoImageUrl,
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        href: `${siteBaseUrl}img/logo.png`,
+      },
+    },
+  ],
 
   presets: [
     [
@@ -54,7 +90,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: logoImagePath,
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
