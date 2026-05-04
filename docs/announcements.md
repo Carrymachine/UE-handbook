@@ -30,7 +30,12 @@
 * 커밋 메시지에 `[major]`가 포함되면 `major`를 올린다.
 
 {/* AUTO-ANNOUNCEMENTS:START */}
-_자동 기록이 아직 없습니다._
+### v0.1.1 · 2026-05-04
+
+* 커밋 범위: `5e4bd65` -> `a86ff7c`
+* 커밋 메시지: `ci: add workflow`
+* 사이트/자동화 수정: `GitHub Actions: deploy.yml`, `사이트 설정`, `favicon.png`, `logo.png`, `자동화 스크립트: update-announcements.mjs`, `정적 자산: favicon.png`, `정적 자산: logo.png`
+
 {/* AUTO-ANNOUNCEMENTS:END */}
 
 ## Related Topics
