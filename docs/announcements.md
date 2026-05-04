@@ -30,6 +30,12 @@
 * 커밋 메시지에 `[major]`가 포함되면 `major`를 올린다.
 
 {/* AUTO-ANNOUNCEMENTS:START */}
+### v0.1.2 · 2026-05-04
+
+* 커밋 범위: `7c5bd7f` -> `1cafe40`
+* 커밋 메시지: `fix: logo, favicon`
+* 사이트/자동화 수정: `사이트 설정`, `정적 자산: favicon.png`, `정적 자산: logo.png`
+
 ### v0.1.1 · 2026-05-04
 
 * 커밋 범위: `5e4bd65` -> `a86ff7c`
