@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --ifm-color-primary: #205c4f;
+  --ifm-color-primary-dark: #1d5347;
+  --ifm-color-primary-darker: #1b4e43;
+  --ifm-color-primary-darkest: #163f36;
+  --ifm-color-primary-light: #25695b;
+  --ifm-color-primary-lighter: #286f60;
+  --ifm-color-primary-lightest: #33856f;
+  --ifm-background-color: #fcfaf4;
+  --ifm-navbar-background-color: rgba(252, 250, 244, 0.88);
+  --ifm-footer-background-color: #efe7d7;
+  --ifm-heading-color: #16211d;
+  --ifm-font-family-base:
+    'IBM Plex Sans KR',
+    'Noto Sans KR',
+    'Segoe UI',
+    sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Consolas', monospace;
+  --ifm-code-font-size: 95%;
+  --ifm-line-height-base: 1.75;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #29332e;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(22, 33, 29, 0.08);
+}
+
+.footer {
+  border-top: 1px solid rgba(22, 33, 29, 0.08);
+}
+
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3 {
+  letter-spacing: -0.02em;
+}
+
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+}
+
+.theme-doc-markdown code {
+  border: 1px solid rgba(32, 92, 79, 0.12);
+}
+
+.pagination-nav__link {
+  border-radius: 18px;
+}
