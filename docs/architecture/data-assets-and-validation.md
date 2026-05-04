@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 5
 ---
 
@@ -46,5 +46,6 @@ public:
 
 ## Related Topics
 
-* [자산 로딩과 자산 참조](/docs/architecture/asset-loading-and-references)
-* [프로퍼티](/docs/reflection/properties)
+* [자산 로딩과 자산 참조](/architecture/asset-loading-and-references)
+* [프로퍼티](/reflection/properties)
+

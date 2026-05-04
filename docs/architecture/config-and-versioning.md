@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 10
 ---
 
@@ -48,5 +48,6 @@ public:
 
 ## Related Topics
 
-* [콘솔 변수와 콘솔 명령](/docs/architecture/console-and-commands)
-* [Core Redirects](/docs/architecture/core-redirects)
+* [콘솔 변수와 콘솔 명령](/architecture/console-and-commands)
+* [Core Redirects](/architecture/core-redirects)
+

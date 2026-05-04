@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 1
 ---
 
@@ -38,6 +38,7 @@ TArray<int32> SpawnScores;
 
 ## Related Topics
 
-* [TArray](/docs/containers/tarray)
-* [TMap과 TSet](/docs/containers/tmap-and-tset)
-* [프로퍼티](/docs/reflection/properties)
+* [TArray](/containers/tarray)
+* [TMap과 TSet](/containers/tmap-and-tset)
+* [프로퍼티](/reflection/properties)
+

@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 1
 ---
 
@@ -39,5 +39,6 @@ FOnHealthChanged OnHealthChanged;
 
 ## Related Topics
 
-* [동적 델리게이트와 멀티캐스트](/docs/delegates/dynamic-and-multicast)
-* [오브젝트 포인터](/docs/object-pointers)
+* [동적 델리게이트와 멀티캐스트](/delegates/dynamic-and-multicast)
+* [오브젝트 포인터](/object-pointers)
+

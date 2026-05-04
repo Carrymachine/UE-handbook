@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 2
 ---
 
@@ -41,5 +41,6 @@ FOnAmmoChanged OnAmmoChanged;
 
 ## Related Topics
 
-* [델리게이트 개요](/docs/delegates/overview)
-* [UFunctions](/docs/reflection/ufunctions)
+* [델리게이트 개요](/delegates/overview)
+* [UFunctions](/reflection/ufunctions)
+

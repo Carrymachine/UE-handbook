@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 5
 ---
 
@@ -45,5 +45,6 @@ class UEPROJECT_API AMyActor : public AActor
 
 ## Related Topics
 
-* [개발 환경 개요](/docs/development-setup/overview)
-* [코딩 표준](/docs/coding-standard)
+* [개발 환경 개요](/development-setup/overview)
+* [코딩 표준](/coding-standard)
+

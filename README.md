@@ -46,6 +46,16 @@ pnpm typecheck
 
 ## 배포
 
+GitHub Pages 주소:
+
+```text
+https://ue-docs-korea.github.io/UE-handbook/
+```
+
+권장 방식은 GitHub Actions 자동 배포다. 이 저장소에는 `main` 브랜치에 푸시하면 Pages로 배포되는 워크플로가 포함되어 있다.
+
+수동 배포가 필요하면 Docusaurus 기본 배포 명령도 사용할 수 있다.
+
 SSH 사용:
 
 ```bash

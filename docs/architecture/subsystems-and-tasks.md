@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 9
 ---
 
@@ -48,5 +48,6 @@ UE::Tasks::Launch(TEXT("BuildInventoryCache"), []()
 
 ## Related Topics
 
-* [언리얼 아키텍처 개요](/docs/architecture/overview)
-* [오브젝트 처리와 가비지 컬렉션](/docs/reflection/object-handling-and-gc)
+* [언리얼 아키텍처 개요](/architecture/overview)
+* [오브젝트 처리와 가비지 컬렉션](/reflection/object-handling-and-gc)
+

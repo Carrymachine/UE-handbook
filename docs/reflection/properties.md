@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 4
 ---
 
@@ -38,5 +38,6 @@ TObjectPtr<UCurveFloat> SpeedCurve;
 
 ## Related Topics
 
-* [리플렉션 시스템 개요](/docs/reflection/overview)
-* [클래스 지정자와 메타데이터](/docs/reflection/class-and-metadata-specifiers)
+* [리플렉션 시스템 개요](/reflection/overview)
+* [클래스 지정자와 메타데이터](/reflection/class-and-metadata-specifiers)
+

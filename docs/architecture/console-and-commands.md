@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 3
 ---
 
@@ -43,5 +43,6 @@ static TAutoConsoleVariable<int32> CVarCombatDebug(
 
 ## Related Topics
 
-* [설정 파일과 커맨드라인](/docs/architecture/config-and-versioning)
-* [모듈과 API 지정자](/docs/architecture/modules)
+* [설정 파일과 커맨드라인](/architecture/config-and-versioning)
+* [모듈과 API 지정자](/architecture/modules)
+

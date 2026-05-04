@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 6
 ---
 
@@ -43,5 +43,6 @@ class MYGAME_API UInventoryComponent : public UActorComponent
 
 ## Related Topics
 
-* [코드 생성과 컴파일 흐름](/docs/development-setup/code-workflow)
-* [언리얼 아키텍처 개요](/docs/architecture/overview)
+* [코드 생성과 컴파일 흐름](/development-setup/code-workflow)
+* [언리얼 아키텍처 개요](/architecture/overview)
+

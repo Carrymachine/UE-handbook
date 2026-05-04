@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 4
 ---
 
@@ -47,6 +47,7 @@ public class MyGame : ModuleRules
 
 ## Related Topics
 
-* [IDE 설정과 선택](/docs/development-setup/editors)
-* [Live Coding](/docs/development-setup/live-coding)
-* [모듈과 API 지정자](/docs/architecture/modules)
+* [IDE 설정과 선택](/development-setup/editors)
+* [Live Coding](/development-setup/live-coding)
+* [모듈과 API 지정자](/architecture/modules)
+

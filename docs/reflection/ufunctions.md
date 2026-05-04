@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 8
 ---
 
@@ -41,5 +41,6 @@ void ServerFire();
 
 ## Related Topics
 
-* [동적 델리게이트와 멀티캐스트](/docs/delegates/dynamic-and-multicast)
-* [클래스 지정자와 메타데이터](/docs/reflection/class-and-metadata-specifiers)
+* [동적 델리게이트와 멀티캐스트](/delegates/dynamic-and-multicast)
+* [클래스 지정자와 메타데이터](/reflection/class-and-metadata-specifiers)
+

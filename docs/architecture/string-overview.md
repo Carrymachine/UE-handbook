@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 7
 ---
 
@@ -38,5 +38,6 @@ const TCHAR* Label = TEXT("Boss");
 
 ## Related Topics
 
-* [FString, FName, FText](/docs/architecture/fstring-fname-ftext)
-* [컨테이너 개요](/docs/containers/overview)
+* [FString, FName, FText](/architecture/fstring-fname-ftext)
+* [컨테이너 개요](/containers/overview)
+

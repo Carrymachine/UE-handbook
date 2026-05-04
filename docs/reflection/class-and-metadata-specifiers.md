@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 7
 ---
 
@@ -42,5 +42,6 @@ class UEPROJECT_API UHealthComponent : public UActorComponent
 
 ## Related Topics
 
-* [리플렉션 시스템 개요](/docs/reflection/overview)
-* [프로퍼티](/docs/reflection/properties)
+* [리플렉션 시스템 개요](/reflection/overview)
+* [프로퍼티](/reflection/properties)
+

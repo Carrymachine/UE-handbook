@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 6
 ---
 
@@ -43,6 +43,7 @@ TSoftObjectPtr<UTexture2D> PortraitTexture;
 
 ## Related Topics
 
-* [자산 로딩과 자산 참조](/docs/architecture/asset-loading-and-references)
-* [TSubclassOf와 인터페이스](/docs/reflection/tsubclassof-and-interfaces)
-* [스마트 포인터](/docs/reflection/smart-pointers)
+* [자산 로딩과 자산 참조](/architecture/asset-loading-and-references)
+* [TSubclassOf와 인터페이스](/reflection/tsubclassof-and-interfaces)
+* [스마트 포인터](/reflection/smart-pointers)
+

@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 3
 ---
 
@@ -41,5 +41,6 @@ void AMyActor::Tick(float DeltaTime)
 
 ## Related Topics
 
-* [코드 생성과 컴파일 흐름](/docs/development-setup/code-workflow)
-* [프로그래밍 도구](/docs/development-setup/programming-tools)
+* [코드 생성과 컴파일 흐름](/development-setup/code-workflow)
+* [프로그래밍 도구](/development-setup/programming-tools)
+

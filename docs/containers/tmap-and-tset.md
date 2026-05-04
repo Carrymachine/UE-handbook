@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 3
 ---
 
@@ -42,5 +42,6 @@ UnlockedTags.Add(TEXT("DoubleJump"));
 
 ## Related Topics
 
-* [컨테이너 개요](/docs/containers/overview)
-* [FName](/docs/architecture/fstring-fname-ftext)
+* [컨테이너 개요](/containers/overview)
+* [FName](/architecture/fstring-fname-ftext)
+

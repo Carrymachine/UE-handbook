@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 8
 ---
 
@@ -41,5 +41,6 @@ FText DisplayName = NSLOCTEXT("Weapon", "RifleName", "Rifle");
 
 ## Related Topics
 
-* [문자열 시스템 개요](/docs/architecture/string-overview)
-* [프로퍼티](/docs/reflection/properties)
+* [문자열 시스템 개요](/architecture/string-overview)
+* [프로퍼티](/reflection/properties)
+

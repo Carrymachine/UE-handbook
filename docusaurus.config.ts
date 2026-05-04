@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://ue-docs-korea.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/UE-handbook/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'jay',
-  projectName: 'ue5-docs',
+  organizationName: 'UE-docs-korea',
+  projectName: 'UE-handbook',
 
   onBrokenLinks: 'throw',
 
@@ -41,6 +41,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          routeBasePath: '/',
           editUrl: undefined,
         },
         blog: false,
@@ -91,12 +92,12 @@ const config: Config = {
           title: '핸드북',
           items: [
             {
-              label: '소개',
-              to: '/docs/intro',
+              label: '핸드북 의도',
+              to: '/',
             },
             {
               label: '개발 환경',
-              to: '/docs/development-setup/overview',
+              to: '/development-setup/overview',
             },
           ],
         },
@@ -118,11 +119,11 @@ const config: Config = {
           items: [
             {
               label: '리플렉션',
-              to: '/docs/reflection/overview',
+              to: '/reflection/overview',
             },
             {
               label: '아키텍처',
-              to: '/docs/architecture/overview',
+              to: '/architecture/overview',
             },
           ],
         },

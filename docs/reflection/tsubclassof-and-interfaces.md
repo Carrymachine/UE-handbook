@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 6
 ---
 
@@ -39,5 +39,6 @@ TSubclassOf<AActor> ProjectileClass;
 
 ## Related Topics
 
-* [오브젝트 포인터](/docs/object-pointers)
-* [UFunctions](/docs/reflection/ufunctions)
+* [오브젝트 포인터](/object-pointers)
+* [UFunctions](/reflection/ufunctions)
+

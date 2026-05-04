@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 1
 ---
 
@@ -41,6 +41,7 @@ PublicDependencyModuleNames.AddRange(
 
 ## Related Topics
 
-* [자산 로딩과 자산 참조](/docs/architecture/asset-loading-and-references)
-* [모듈과 API 지정자](/docs/architecture/modules)
-* [서브시스템과 태스크](/docs/architecture/subsystems-and-tasks)
+* [자산 로딩과 자산 참조](/architecture/asset-loading-and-references)
+* [모듈과 API 지정자](/architecture/modules)
+* [서브시스템과 태스크](/architecture/subsystems-and-tasks)
+

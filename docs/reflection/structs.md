@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 5
 ---
 
@@ -44,5 +44,6 @@ struct FWeaponStats
 
 ## Related Topics
 
-* [프로퍼티](/docs/reflection/properties)
-* [데이터 에셋과 데이터 검증](/docs/architecture/data-assets-and-validation)
+* [프로퍼티](/reflection/properties)
+* [데이터 에셋과 데이터 검증](/architecture/data-assets-and-validation)
+

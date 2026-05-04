@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 1
 ---
 
@@ -40,6 +40,7 @@ ProjectNameServer
 
 ## Related Topics
 
-* [IDE 설정과 선택](/docs/development-setup/editors)
-* [코드 생성과 컴파일 흐름](/docs/development-setup/code-workflow)
-* [Live Coding](/docs/development-setup/live-coding)
+* [IDE 설정과 선택](/development-setup/editors)
+* [코드 생성과 컴파일 흐름](/development-setup/code-workflow)
+* [Live Coding](/development-setup/live-coding)
+

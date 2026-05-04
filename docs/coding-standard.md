@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 3
 ---
 
@@ -45,6 +45,7 @@ public:
 
 ## Related Topics
 
-* [컨테이너 개요](/docs/containers/overview)
-* [오브젝트 포인터](/docs/object-pointers)
-* [프로퍼티](/docs/reflection/properties)
+* [컨테이너 개요](/containers/overview)
+* [오브젝트 포인터](/object-pointers)
+* [프로퍼티](/reflection/properties)
+

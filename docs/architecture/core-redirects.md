@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 4
 ---
 
@@ -38,5 +38,6 @@ C++ 타입이나 콘텐츠 경로를 바꾸려는 순간, 기존 블루프린트
 
 ## Related Topics
 
-* [모듈과 API 지정자](/docs/architecture/modules)
-* [설정 파일과 커맨드라인](/docs/architecture/config-and-versioning)
+* [모듈과 API 지정자](/architecture/modules)
+* [설정 파일과 커맨드라인](/architecture/config-and-versioning)
+

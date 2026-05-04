@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 2
 ---
 
@@ -44,5 +44,6 @@ for (const FString& Name : PlayerNames)
 
 ## Related Topics
 
-* [컨테이너 개요](/docs/containers/overview)
-* [TMap과 TSet](/docs/containers/tmap-and-tset)
+* [컨테이너 개요](/containers/overview)
+* [TMap과 TSet](/containers/tmap-and-tset)
+

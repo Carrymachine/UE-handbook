@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 2
 ---
 
@@ -38,5 +38,6 @@ UInventoryEntry* Entry = NewObject<UInventoryEntry>(this);
 
 ## Related Topics
 
-* [오브젝트 처리와 가비지 컬렉션](/docs/reflection/object-handling-and-gc)
-* [오브젝트 포인터](/docs/object-pointers)
+* [오브젝트 처리와 가비지 컬렉션](/reflection/object-handling-and-gc)
+* [오브젝트 포인터](/object-pointers)
+

@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 3
 ---
 
@@ -39,6 +39,7 @@ TObjectPtr<UObject> CachedObject;
 
 ## Related Topics
 
-* [오브젝트와 생성](/docs/reflection/objects)
-* [프로퍼티](/docs/reflection/properties)
-* [스마트 포인터](/docs/reflection/smart-pointers)
+* [오브젝트와 생성](/reflection/objects)
+* [프로퍼티](/reflection/properties)
+* [스마트 포인터](/reflection/smart-pointers)
+

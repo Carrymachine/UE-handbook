@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 2
 ---
 
@@ -49,5 +49,6 @@ UAssetManager::GetStreamableManager().RequestAsyncLoad(
 
 ## Related Topics
 
-* [오브젝트 포인터](/docs/object-pointers)
-* [데이터 에셋과 데이터 검증](/docs/architecture/data-assets-and-validation)
+* [오브젝트 포인터](/object-pointers)
+* [데이터 에셋과 데이터 검증](/architecture/data-assets-and-validation)
+

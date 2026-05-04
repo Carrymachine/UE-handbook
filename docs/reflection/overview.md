@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 1
 ---
 
@@ -45,6 +45,7 @@ public:
 
 ## Related Topics
 
-* [오브젝트와 생성](/docs/reflection/objects)
-* [프로퍼티](/docs/reflection/properties)
-* [UFunctions](/docs/reflection/ufunctions)
+* [오브젝트와 생성](/reflection/objects)
+* [프로퍼티](/reflection/properties)
+* [UFunctions](/reflection/ufunctions)
+
