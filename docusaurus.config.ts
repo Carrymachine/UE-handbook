@@ -56,7 +56,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
@@ -84,51 +84,6 @@ const config: Config = {
           position: 'right',
         },
       ],
-    },
-    footer: {
-      style: 'light',
-      links: [
-        {
-          title: '핸드북',
-          items: [
-            {
-              label: '핸드북 의도',
-              to: '/',
-            },
-            {
-              label: '개발 환경',
-              to: '/development-setup/overview',
-            },
-          ],
-        },
-        {
-          title: '참고 자료',
-          items: [
-            {
-              label: 'Epic Programming with C++',
-              href: 'https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine?application_version=5.6',
-            },
-            {
-              label: 'TypeScript Handbook KR',
-              href: 'https://typescript-kr.github.io/',
-            },
-          ],
-        },
-        {
-          title: '바로 가기',
-          items: [
-            {
-              label: '리플렉션',
-              to: '/reflection/overview',
-            },
-            {
-              label: '아키텍처',
-              to: '/architecture/overview',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} UE5 C++ 핸드북`,
     },
     prism: {
       theme: prismThemes.github,
