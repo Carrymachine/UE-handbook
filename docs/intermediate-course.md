@@ -1,5 +1,12 @@
 ---
 title: 중급 과정
+description: Unreal C++ 중급 과정입니다. 컨테이너, 델리게이트, USTRUCT, GC, 자산 참조, 모듈, 서브시스템처럼 실제 프로젝트 구조를 만드는 주제를 다룹니다.
+keywords:
+  - Unreal C++ 중급
+  - UE5 모듈
+  - Unreal 자산 참조
+  - Unreal 서브시스템
+  - Unreal GC
 ---
 
 # 중급 과정

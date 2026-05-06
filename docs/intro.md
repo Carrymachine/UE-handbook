@@ -1,5 +1,13 @@
 ---
 slug: /
+title: UE5 C++ 핸드북
+description: Unreal Engine 5 C++를 한국어로 단계적으로 학습하기 위한 핸드북입니다. 초급부터 중급, 심화까지 UE5 C++ 문서를 학습 흐름 기준으로 재구성합니다.
+keywords:
+  - Unreal Engine 5
+  - UE5
+  - Unreal C++
+  - UE5 C++ 핸드북
+  - 한국어 Unreal 문서
 ---
 
 # 핸드북 의도

@@ -1,5 +1,12 @@
 ---
 title: 초급 과정
+description: Unreal C++를 처음 읽는 개발자를 위한 초급 과정입니다. 개발 환경, Unreal식 C++ 표기, UCLASS, UPROPERTY, UFUNCTION 같은 리플렉션 기본기를 순서대로 익힙니다.
+keywords:
+  - Unreal C++ 입문
+  - UE5 C++ 초급
+  - UCLASS
+  - UPROPERTY
+  - UFUNCTION
 ---
 
 # 초급 과정

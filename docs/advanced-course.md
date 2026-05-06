@@ -1,5 +1,11 @@
 ---
 title: 심화 과정
+description: Unreal Engine 5 C++ 심화 과정입니다. UHT 생성 코드, 엔진 소스, 리플렉션 내부 구조, 메타데이터 동작 같은 고급 주제를 직접 작성한 아티클로 확장합니다.
+keywords:
+  - Unreal C++ 심화
+  - UHT
+  - Unreal Reflection
+  - Engine Source
 ---
 
 # 심화 과정

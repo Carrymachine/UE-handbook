@@ -1,3 +1,7 @@
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+
 # 진행 상황
 
 ## Summary

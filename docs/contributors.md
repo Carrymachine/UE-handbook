@@ -1,3 +1,7 @@
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+
 # Contributor List
 
 ## Summary

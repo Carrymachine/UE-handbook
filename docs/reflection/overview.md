@@ -1,5 +1,12 @@
 ---
 sidebar_position: 1
+description: Unreal Engine 5 리플렉션 시스템 개요입니다. UCLASS, UPROPERTY, UFUNCTION, GENERATED_BODY가 에디터, 직렬화, 블루프린트, GC와 어떻게 연결되는지 설명합니다.
+keywords:
+  - Unreal Reflection
+  - UCLASS
+  - UPROPERTY
+  - UFUNCTION
+  - GENERATED_BODY
 ---
 
 # 리플렉션 시스템 개요

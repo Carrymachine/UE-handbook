@@ -10,13 +10,18 @@ const siteUrl = 'https://ue-docs-korea.github.io';
 const siteBaseUrl = '/UE-handbook/';
 const logoImagePath = 'img/logo.png';
 const faviconImagePath = 'favicon.png';
+const siteTitle = 'UE5 C++ 핸드북';
+const siteDescription =
+  'Unreal Engine 5 C++를 한국어로 단계적으로 학습하는 핸드북. 리플렉션, UObject, UPROPERTY, UFUNCTION, 모듈, 자산 참조, 서브시스템까지 UE5 C++ 핵심 개념을 초급부터 심화까지 정리합니다.';
+const siteRepoUrl = 'https://github.com/UE-docs-korea/UE-handbook';
 const faviconFilePath = path.join(process.cwd(), 'static', 'favicon.png');
 const faviconAssetVersion = fs.statSync(faviconFilePath).mtimeMs.toFixed(0);
 const faviconAssetPath = `${faviconImagePath}?v=${faviconAssetVersion}`;
 const logoImageUrl = `${siteUrl}${siteBaseUrl}img/logo.png`;
+const canonicalSiteUrl = `${siteUrl}${siteBaseUrl}`;
 
 const config: Config = {
-  title: 'UE5 C++ 핸드북',
+  title: siteTitle,
   tagline: '한국어로 읽는 Unreal Engine 5 C++ 학습서',
   favicon: faviconAssetPath,
 
@@ -68,6 +73,28 @@ const config: Config = {
       },
     },
     {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:locale',
+        content: 'ko_KR',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:site_name',
+        content: siteTitle,
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        hrefLang: 'ko-KR',
+        href: canonicalSiteUrl,
+      },
+    },
+    {
       tagName: 'link',
       attributes: {
         rel: 'apple-touch-icon',
@@ -81,6 +108,29 @@ const config: Config = {
         href: `${siteBaseUrl}${faviconAssetPath}`,
       },
     },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: siteTitle,
+        url: canonicalSiteUrl,
+        description: siteDescription,
+        inLanguage: 'ko-KR',
+        publisher: {
+          '@type': 'Organization',
+          name: 'UE Docs Korea',
+          url: siteRepoUrl,
+          logo: {
+            '@type': 'ImageObject',
+            url: logoImageUrl,
+          },
+        },
+      }),
+    },
   ],
 
   presets: [
@@ -93,6 +143,11 @@ const config: Config = {
           editUrl: undefined,
         },
         blog: false,
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.7,
+          filename: 'sitemap.xml',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -103,6 +158,25 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: logoImagePath,
+    metadata: [
+      {
+        name: 'description',
+        content: siteDescription,
+      },
+      {
+        name: 'keywords',
+        content:
+          'Unreal Engine 5, UE5, Unreal C++, Unreal Engine C++, UE5 C++ 핸드북, 한국어 Unreal 문서, UPROPERTY, UCLASS, UFUNCTION, UObject, 리플렉션',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        name: 'robots',
+        content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+      },
+    ],
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,

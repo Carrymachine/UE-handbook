@@ -1,5 +1,11 @@
 ---
 sidebar_position: 3
+description: Unreal C++ 입문자를 위한 가이드입니다. 일반 C++와 다르게 보이는 Unreal의 접두사, 매크로, 엔진 타입, 리플렉션 규칙을 읽는 법부터 설명합니다.
+keywords:
+  - Unreal C++ 입문
+  - Unreal C++ 문법
+  - Unreal 접두사
+  - GENERATED_BODY
 ---
 
 # Unreal C++ 입문 가이드
