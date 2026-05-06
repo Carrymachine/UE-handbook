@@ -22,7 +22,7 @@ Unreal C++는 단순히 `cpp` 파일을 작성하는 작업이 아니다. Unreal
 
 TypeScript 한국어 핸드북처럼 읽기 위한 문서 흐름을 먼저 세우고, 그 위에 UE 문서를 다시 배치하는 것이 이 프로젝트의 핵심 방향이다. 그래서 공식 문서의 섹션 경계를 그대로 따르기보다, 학습 순서가 자연스럽도록 주제를 재배치한다.
 
-이 핸드북은 공식 섹션을 네 갈래로 재구성한다. 먼저 개발 환경과 반복 작업 흐름을 정리하고, 그다음 컨테이너와 델리게이트 같은 언리얼식 C++ 문법을 익힌다. 이후 모듈, 자산, 설정 파일, 서브시스템을 다루고, 마지막으로 UObject와 리플렉션 시스템을 집중적으로 설명한다.
+현재 문서 구조도 단순 주제 나열보다 학습 단계 중심으로 재편한다. 초급에서는 개발 환경, Unreal식 C++ 표기, 리플렉션 기본기를 먼저 익히고, 중급에서는 컨테이너, 델리게이트, GC, 자산 참조, 모듈, 서브시스템처럼 실제 프로젝트 구조를 만드는 주제를 다룬다. 심화에는 엔진 소스와 내부 메커니즘을 해설하는 직접 작성 아티클을 쌓아 가는 방향을 잡는다.
 
 ## Why This Exists
 
@@ -60,5 +60,6 @@ class UEPROJECT_API AMyActor : public AActor
 
 * [Contributor List](/contributors)
 * [Unreal Engine 역사](/unreal-engine-history)
-* [개발 환경 개요](/development-setup/overview)
-* [리플렉션 시스템 개요](/reflection/overview)
+* [초급 과정](/beginner-course)
+* [중급 과정](/intermediate-course)
+* [심화 과정](/advanced-course)
