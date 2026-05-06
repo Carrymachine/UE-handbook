@@ -29,6 +29,11 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'coding-standard',
+        'unreal-cpp-vs-standard-cpp',
+        'prefixes-and-naming',
+        'class-header-anatomy',
+        'engine-types',
+        'object-pointers',
         {
           type: 'category',
           label: '컨테이너',
@@ -46,7 +51,6 @@ const sidebars: SidebarsConfig = {
             'delegates/dynamic-and-multicast',
           ],
         },
-        'object-pointers',
       ],
     },
     {

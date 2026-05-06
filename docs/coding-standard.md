@@ -1,30 +1,57 @@
-﻿---
+---
 sidebar_position: 3
 ---
 
-# Unreal C++ 코딩 표준
+# Unreal C++ 입문 가이드
 
 ## Summary
 
-Epic의 코딩 표준은 문법 취향보다 도구 호환성과 가독성을 위한 규칙에 가깝다. 네이밍, 파일 구성, 매크로 사용, UE 타입 선택이 일정해야 코드 검색과 유지보수가 쉬워진다.
+Unreal C++는 문법 자체는 C++이지만, 실제로는 엔진 규칙을 함께 배워야 읽을 수 있는 언어에 가깝다. 접두사, 매크로, 엔진 타입, 리플렉션, 가비지 컬렉션이 모두 코드 작성 방식에 영향을 준다.
 
-## 포함된 공식 주제
-
-* `Coding Standard`
+이 문서는 `언리얼식 C++` 카테고리를 어떤 순서로 읽어야 하는지 안내하는 시작점이다. 목표는 규칙 암기가 아니라 "왜 Unreal 코드가 일반 C++와 다르게 보이는가"를 이해하는 것이다.
 
 ## When You Use This
 
-새 프로젝트의 기본 스타일을 정하거나, 팀 코드 리뷰에서 "왜 언리얼식으로 안 썼는가"를 설명해야 할 때 읽는다.
+기존 C++ 경험은 있지만 Unreal C++ 파일을 처음 열었을 때, `UCLASS`, `GENERATED_BODY`, `AActor`, `TArray`, `bCanJump` 같은 표기가 한꺼번에 나와 코드가 낯설게 느껴질 때 읽는다.
 
 ## Core Concept
 
-대표 규칙은 `A`, `U`, `F`, `I`, `E` 접두사, `b`로 시작하는 `bool`, PascalCase, Unreal 컨테이너와 문자열 타입 우선 사용이다. UE5에서는 UObject 멤버를 `UPROPERTY()`와 `TObjectPtr`로 관리하는 흐름도 중요하다.
+Unreal C++ 입문자는 보통 문법보다 "코드 모양"에서 먼저 막힌다. 같은 로직이라도 Unreal에서는 다음 질문을 먼저 던진다.
+
+1. 이 타입은 월드에 놓이는 액터인가, 그냥 데이터인가, UObject인가?
+2. 이 멤버는 에디터, 블루프린트, 직렬화, GC가 알아야 하는 값인가?
+3. 이 값은 `std::vector`보다 `TArray`가 자연스러운가?
+4. 이 클래스 선언은 UnrealHeaderTool이 읽을 수 있는 형태인가?
+
+즉, Unreal C++는 "엔진과 계약하는 C++"라고 보는 편이 이해가 빠르다. 일반 C++에서는 컴파일러만 이해하면 되는 선언도, Unreal에서는 에디터와 런타임 시스템까지 함께 이해해야 한다.
+
+## Step By Step
+
+이 카테고리는 다음 순서로 읽는 것을 추천한다.
+
+1. [일반 C++와 Unreal C++의 차이](/unreal-cpp-vs-standard-cpp)
+2. [접두사와 이름 규칙](/prefixes-and-naming)
+3. [Unreal 클래스 헤더 해부](/class-header-anatomy)
+4. [Unreal 타입 선택 기준](/engine-types)
+5. [오브젝트 포인터](/object-pointers)
+6. [컨테이너](/containers/overview)
+7. [델리게이트](/delegates/overview)
+
+앞쪽 문서는 "읽는 법"이고, 뒤쪽 문서는 "쓰는 법"에 가깝다. 처음부터 `TMap`, `TSoftObjectPtr`, 멀티캐스트 델리게이트를 외우기보다, 먼저 코드가 어떤 규칙으로 생겼는지를 이해해야 이후 문서가 쉬워진다.
 
 ## Example
 
 ```cpp
+// Standard C++
+class DamageSystem
+{
+public:
+    bool CanAttack = true;
+};
+
+// Unreal C++
 UCLASS()
-class UEPROJECT_API ACombatCharacter : public ACharacter
+class UEPROJECT_API UDamageSystem : public UObject
 {
     GENERATED_BODY()
 
@@ -36,16 +63,27 @@ public:
 
 ## Explanation
 
-이 예시는 접두사, PascalCase, `b` 접두 불리언, `UPROPERTY` 노출 규칙이 한 번에 들어 있다. 표준을 맞추면 언리얼 코드베이스 전체에서 비슷한 패턴으로 읽히기 때문에 온보딩 비용이 낮아진다.
+왼쪽 코드는 일반 C++ 클래스다. 오른쪽 코드는 Unreal 엔진 시스템과 연결된 UObject 클래스다.
+
+차이는 문법 장식이 아니라 기능 차이다.
+
+* `UCLASS()`는 이 타입을 리플렉션 시스템에 등록한다.
+* `UEPROJECT_API`는 모듈 경계를 넘는 심볼 노출에 쓰인다.
+* `GENERATED_BODY()`는 UnrealHeaderTool이 만든 코드를 클래스 내부에 연결한다.
+* `UPROPERTY()`는 이 멤버를 에디터, 직렬화, GC 같은 엔진 시스템에 연결한다.
+* `bCanAttack`의 `b`는 bool 멤버라는 뜻이다.
+
+Unreal 코드를 읽을 때는 "왜 이런 표기가 붙었는가"를 먼저 해석해야 한다. 이 감각이 잡히면 문법 난이도보다 구조 이해가 훨씬 빨라진다.
 
 ## Common Mistakes
 
-* UObject를 `new`/`delete`로 관리하는 일반 C++ 습관을 그대로 가져온다.
-* `std::string`, `std::vector`를 무조건 피해야 한다고 오해하거나, 반대로 Unreal 타입을 전혀 안 쓴다.
+* Unreal C++를 그냥 "Epic 스타일로 꾸민 일반 C++"라고 생각한다.
+* 리플렉션 매크로와 접두사를 단순 취향 문제로 보고 무시한다.
+* 같은 API 안에서 `std::vector`와 `TArray`, raw pointer와 `TObjectPtr`를 아무 기준 없이 섞는다.
 
 ## Related Topics
 
-* [컨테이너 개요](/containers/overview)
-* [오브젝트 포인터](/object-pointers)
-* [프로퍼티](/reflection/properties)
-
+* [일반 C++와 Unreal C++의 차이](/unreal-cpp-vs-standard-cpp)
+* [접두사와 이름 규칙](/prefixes-and-naming)
+* [Unreal 클래스 헤더 해부](/class-header-anatomy)
+* [Unreal 타입 선택 기준](/engine-types)
